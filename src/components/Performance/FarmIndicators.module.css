@@ -1,0 +1,13 @@
+.indicatorContainer div {
+  border-top: 2px solid #dddddd;
+  padding: 0.5em;
+}
+.indicatorContainer div:nth-child(1) {
+  border-top: none;
+}
+.indicatorContainer :global .tendency-positive {
+  color: #72d172;
+}
+.indicatorContainer :global .tendency-negative {
+  color: #ff8424;
+}

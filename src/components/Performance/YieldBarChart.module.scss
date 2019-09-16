@@ -1,0 +1,47 @@
+.container {
+  border: 0.125rem solid #d2d1d4;
+  font-size: 1rem;
+  background-color: #fff;
+  margin: 1rem;
+  flex: 1;
+}
+.diagramContainer {
+  width: 38rem;
+  margin: 1rem auto;
+  position: relative;
+  :global .y-axes-name {
+    position: absolute;
+    transform: rotate(270deg);
+    top: 5rem;
+    left: -5rem;
+  }
+}
+.title {
+  margin: 1.25rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.legendContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.8125rem;
+  color: #1e1c2a;
+  span {
+    line-height: 1.125rem;
+    display: flex;
+  }
+  .coloredSquare {
+    height: 1.125rem;
+    width: 1.125rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
+.buttonDatePicker {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.875rem;
+  margin: 1.5rem 3rem 0 0;
+  height: 1.8rem;
+  border: 1px solid #000;
+  cursor: pointer;
+}

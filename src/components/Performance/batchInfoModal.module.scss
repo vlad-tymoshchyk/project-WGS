@@ -1,0 +1,160 @@
+.modalContainer {
+  $rowLineHeight: 1.125rem;
+  $rowPadding: 1rem;
+  $rowHeight: $rowLineHeight + $rowPadding * 2;
+  font-family: 'Work Sans';
+  max-width: 100% !important;
+  width: 70rem !important;
+  text-align: center;
+  :global .modal-row {
+    height: $rowHeight;
+  }
+  :global .modal-content {
+    background-color: #f8f8f8;
+  }
+  :global .modal-body {
+    padding: 0;
+  }
+  :global .column-header {
+    background-color: #d5d5d5;
+    font-weight: 600;
+    color: #707070;
+    font-size: 1.125rem;
+    padding: 0.7rem;
+  }
+  :global .prop-name,
+  :global .prop-value {
+    margin: 0 1em;
+    display: inline-flex;
+    align-items: center;
+  }
+  :global .prop-name {
+    font-weight: 600;
+    text-align: left;
+  }
+  :global .prop-value {
+    text-align: right;
+    font-weight: 500;
+  }
+  .scrollContainer {
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: calc(1rem / 4);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #1c1a27;
+    }
+  }
+  .CUInfo {
+    .CUListOpener {
+      cursor: pointer;
+      line-height: 2.5rem;
+      align-items: center;
+      color: #707070;
+      background-color: #ecebec;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      :global .caret {
+        margin-right: 0.5rem;
+        svg {
+          display: block;
+        }
+      }
+    }
+    :global .collapse-container {
+      font-family: 'Work Sans';
+      font-weight: 500;
+      color: #1e1c2a;
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.25rem 0 1.25rem;
+        :global .number {
+          width: 2rem;
+          display: inline-block;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .batchInfo,
+  .CUInfo {
+    .scrollContainer {
+      height: $rowHeight * 10;
+    }
+  }
+  .CUInfo {
+    flex: 3;
+    border-right: solid 1px #ecebec;
+  }
+  .batchInfo {
+    flex: 3;
+    border-right: solid 1px #ecebec;
+    :global .edit-button {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .noteContainer {
+      text-align: left;
+      line-height: 1.2em;
+      margin: 0 1rem 1rem 1rem;
+      color: #707070;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .noteEditor {
+      padding: 0 1rem;
+      text-align: left;
+      form {
+        background-color: inherit;
+        textarea {
+          font-size: 0.9rem;
+          font-weight: 500;
+          width: 100%;
+          border: 1px solid;
+          border-radius: 0.1rem;
+          line-height: 1.2em;
+          color: #707070;
+        }
+        button {
+          width: 7rem;
+          height: 1.3rem;
+          font-size: 0.8rem;
+          border: none;
+          color: #ffffff;
+          background-color: #1e1c2a;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+  .lastOperations {
+    flex: 5;
+    .scrollContainer {
+      height: $rowHeight * 9;
+    }
+    table {
+      width: 100%;
+      text-align: left;
+      tr {
+        // line-height: $rowHeight;
+      }
+      th,
+      td {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+      th {
+        background-color: #ecebec;
+        color: #707070;
+        font-weight: 600;
+      }
+      td {
+        border-right: solid 1px #ecebec;
+        font-weight: 500;
+      }
+    }
+  }
+}

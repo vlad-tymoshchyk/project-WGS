@@ -1,0 +1,40 @@
+.main {
+  height: 100%;
+  background-image: url(/login-page-background.png);
+  background-size: cover;
+}
+.logo {
+  width: 3em;
+}
+.formContainer {
+  width: 30em;
+}
+form {
+  background-color: #ffffff;
+}
+#remember {
+  height: 1em;
+  width: 1em;
+}
+.submit-button {
+  width: 10em;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.errorMessage {
+  padding-top: 0.3em;
+  font-weight: 500;
+  color: #ff3939;
+}
+.forgotPasswordHeading {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.linkBackToLogin {
+  text-decoration: underline;
+
+}

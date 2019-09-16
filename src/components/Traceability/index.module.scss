@@ -1,0 +1,80 @@
+.tableContainer {
+  flex: 1;
+  margin: 1em;
+  background-color: #ffffff;
+  border: 2px solid #e7e7e7;
+}
+.filterTextInput {
+  width: 100%;
+  padding: 1.5em;
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.filterTextInput input {
+  width: 100%;
+}
+.indicatorContainer {
+  width: 19rem;
+  margin: 1em;
+  margin-left: 0;
+  background-color: #ffffff;
+  border: 2px solid #e7e7e7;
+  font-size: 0.9rem;
+  :global .font-bold {
+    // font-family: 'Work Sans Bold', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+  }
+}
+
+.modalContainer {
+  max-width: 80% !important;
+  width: 80em !important;
+  // font-family: 'Work Sans Semibold', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  :global .modal-title {
+    // font-family: 'Work Sans Medium';
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.3125rem;
+    padding-left: 1rem;
+  }
+  :global .modal-body {
+    padding: 0;
+    thead {
+      font-size: 0.9rem;
+      background-color: #d5d5d5;
+      color: #707070;
+      th {
+        text-align: center;
+      }
+    }
+    tbody {
+      color: #1e1c2a;
+    }
+  }
+}
+
+.dropdownFilter {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  height: 1.75rem;
+  margin-right: 2rem;
+  label {
+    line-height: 1.75rem;
+    margin-bottom: 0;
+  }
+  select {
+    width: 10rem;
+    font-size: 1rem;
+  }
+}
+
+.substrateModalBody {
+  text-align: center;
+  font-weight: 600;
+}

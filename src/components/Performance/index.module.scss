@@ -1,0 +1,30 @@
+.tableContainer {
+  margin: 1em;
+  background-color: #ffffff;
+  border: 2px solid #e7e7e7;
+  width: 100%;
+}
+.dropdownFilter {
+  height: 1.75rem;
+  width: 10rem;
+  font-size: 0.875rem;
+  margin: 1em;
+  color: #ffffff;
+  background-color: #707070;
+}
+.horizontalSeparator {
+  margin: 1em;
+  background-color: #e1dfe1;
+  color: #e1dfe1;
+  border: none;
+  height: 2px;
+}
+.filterInput {
+  width: 30em;
+}
+.filterInput input {
+  border-color: #bebebe;
+}
+.separator {
+  margin: 0 1rem;
+}

@@ -1,0 +1,42 @@
+.table {
+  font-size: 0.9rem;
+  tbody {
+    // font-family: 'Work Sans Medium', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #1e1c2a;
+    td {
+      text-align: right;
+    }
+  }
+  thead {
+    background-color: #607d8b;
+    color: #ffffff;
+    th {
+      text-align: right;
+      vertical-align: top !important;
+      font-weight: normal;
+      cursor: pointer;
+    }
+  }
+}
+.footer {
+  font-weight: normal;
+  color: #707070;
+  span {
+    margin: 0.5em;
+  }
+}
+.navArrow {
+  font-size: 1.2em;
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+.table :global .columnOrderedBy {
+  background-color: #424242;
+}
+.table :global .orderedBy {
+  background-color: #f7f3f3;
+}
